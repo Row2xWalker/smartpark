@@ -8,12 +8,12 @@ This is a Spring Boot application designed to manage parking lots, vehicles, and
 4. [Run Instructions](#run-instructions)
 5. [API Endpoints](#api-endpoints)
 
-## Requirements
+## 1. Requirements
 - Java 17 (or later)
 - Maven 3.8.x (or later)
 - Spring Boot 3.x
 
-## Project Setup
+## 2. Project Setup
 1. Clone this repository to your local machine:
 
 ```bash
@@ -24,7 +24,7 @@ git clone https://github.com/Row2xWalker/smartpark.git
 ```bash
 cd smartpark
 ```
-## Build Instructions
+## 3. Build Instructions
 To build the application, use Maven. Run the following command in the project root directory:
 
 ```bash
@@ -32,7 +32,7 @@ mvn clean install
 ```
 This will download dependencies, compile the project, run tests, and package the application into a runnable JAR file.
 
-## Building the Application:
+## 4. Building the Application:
 ```bash
 mvn clean package
 ```
@@ -50,8 +50,9 @@ By default, the application will start on port 8080. You can customize the port 
 server.port=8080
 ```
 
-### Access the API
+## 5. Access the API
 Once the application is running, you can interact with the API using any HTTP client (Postman, cURL, etc.). The API endpoints are documented below.
+More information here: https://documenter.getpostman.com/view/28202989/2sB2cU9Mrz
 
 API Endpoints
 1. Register a Parking Lot
