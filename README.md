@@ -63,8 +63,7 @@ API Endpoints
     {
         "lotId": "LOT-001",
         "location": "Downtown",
-        "capacity": 50,
-        "occupiedSpaces": 0
+        "capacity": 50
     }
     ```
 2. Register a Vehicle
@@ -79,24 +78,17 @@ API Endpoints
     }
     ```
 3. Check-in a Vehicle to a Parking Lot
-   - URL: `/api/vehicle/check-in`
+   - URL: `/api/vehicles/{licensePlate}/check-in?parkingLotId={parkingLotId}`
    - Method: `POST`
-   - Body:
-    ```json
-    {
-    "licensePlate": "ABC123",
-    "parkingLotId": "LOT-001"
-    }
-    ```
+   - Path Parameter:
+      - licensePlate: The license plate of the vehicle you want to check in.
+   - Query Parameter:
+      - parkingLotId: The ID of the parking lot where the vehicle will be checked in.
 4. Check-out a Vehicle from a Parking Lot
-   - URL: `/api/vehicle/check-out`
+   - URL: `/api/vehicles/ABC123/check-out`
    - Method: `POST`
-   - Body:
-    ```json
-    {
-      "licensePlate": "ABC123"
-    }
-    ```
+   - Path Parameter:
+      - licensePlate: The license plate of the vehicle you want to check in.
 5. Get Parking Lot Occupancy
    - URL: `/api/parking-lot/{parkingLotId}/occupancy`
    - Method: `GET`
