@@ -85,7 +85,7 @@ API Endpoints
    - Query Parameter:
       - parkingLotId: The ID of the parking lot where the vehicle will be checked in.
 4. Check-out a Vehicle from a Parking Lot
-   - URL: `/api/vehicles/ABC123/check-out`
+   - URL: `/api/vehicles/{licensePlate}/check-out`
    - Method: `POST`
    - Path Parameter:
       - licensePlate: The license plate of the vehicle you want to check in.
