@@ -27,7 +27,7 @@ public class Vehicle {
     public Vehicle() {}
 
     @OneToOne
-    @JoinColumn(name = "parking_spot_id") // The foreign key that references ParkingSpot
+    @JoinColumn(name = "parking_spot_id")
     private ParkingSpot parkingSpot;
     @JsonCreator
     public Vehicle(

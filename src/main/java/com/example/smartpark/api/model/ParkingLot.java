@@ -16,7 +16,7 @@ public class ParkingLot {
     @NotNull
     @Size(min = 1, max = 50, message = "Lot Id must be between 1 and 50 characters")
     @Column(unique = true) // Ensures unique lot identifiers
-    private String lotId;  // User-defined unique identifier
+    private String lotId;
 
     @NotNull
     private String location;
@@ -28,9 +28,7 @@ public class ParkingLot {
     @OneToMany(mappedBy = "parkingLot", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<ParkingSpot> spots = new ArrayList<>();
 
-    public ParkingLot() {
-        // Default constructor required by JPA
-    }
+    public ParkingLot() {}
     @JsonCreator
     public ParkingLot(
             @JsonProperty("lotId") String lotId,

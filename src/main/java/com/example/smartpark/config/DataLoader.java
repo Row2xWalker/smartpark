@@ -20,9 +20,9 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // Create a parking lot
+        // Parking lot
         ParkingLot lot1 = new ParkingLot();
-        lot1.setLotId("Lot1");
+        lot1.setLotId("LOT-000");
         lot1.setLocation("Downtown");
         lot1.setCapacity(5);
         lot1.setOccupiedSpaces(2);
@@ -30,9 +30,9 @@ public class DataLoader implements CommandLineRunner {
         // Save parking lot
         ParkingLot savedLot = parkingLotRepository.save(lot1);
 
-        // Create some vehicles
+        // vehicles
         Vehicle vehicle1 = new Vehicle();
-        vehicle1.setLicensePlate("ABC123");
+        vehicle1.setLicensePlate("ABC000");
         vehicle1.setType("Car");
         vehicle1.setOwnerName("John Doe");
 
@@ -56,6 +56,6 @@ public class DataLoader implements CommandLineRunner {
             parkingSpotRepository.save(spot);
         }
 
-        System.out.println("Test data has been loaded into the database.");
+        System.out.println("Data has been loaded into the database.");
     }
 }

@@ -17,12 +17,12 @@ This is a Spring Boot application designed to manage parking lots, vehicles, and
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/parking-lot-management.git
+git clone https://github.com/Row2xWalker/smartpark.git
 ```
 2. Navigate to the project directory:
 
 ```bash
-cd parking-lot-management
+cd smartpark
 ```
 ## Build Instructions
 To build the application, use Maven. Run the following command in the project root directory:
@@ -42,7 +42,7 @@ This will produce a target/parking-lot-management-<version>.jar file that can be
 Once the application is built, you can run it using the following command:
 
 ```bash
-java -jar target/parking-lot-management-<version>.jar
+java -jar target/smartpark-0.0.1-SNAPSHOT.jar
 ```
 By default, the application will start on port 8080. You can customize the port in the application.properties or application.yml file:
 
